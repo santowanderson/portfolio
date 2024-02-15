@@ -1,0 +1,123 @@
+.about-me-content p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+.about-me-content p:first-of-type {
+  margin-bottom: 15px;
+}
+
+.knwl-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.knwl-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.knwl-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  -webkit-user-select:none;  
+  -moz-user-select:none;     
+  -ms-user-select:none;      
+  user-select:none;  
+}
+
+.description-area h1 {
+  text-align: center;
+  font-size: var(--fs-16);
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--white);
+}
+
+.description-area p {
+  color: var(--light-gray);
+  font-size: var(--fs-14);
+  text-align: center;
+}
+
+.tech-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.list-tech-item {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+
+.content-tech-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  padding-top: 45px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.content-tech-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15px, -25px);
+  background: var(--bg-gradient-onyx);
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-tech-item h1 {
+  font-size: var(--fs-16);
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--white);
+}
+
+.content-tech-item p {
+  font-size: var(--fs-14);
+  font-weight: 400;
+  color: var(--light-gray);
+}

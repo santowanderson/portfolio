@@ -1,0 +1,129 @@
+#sidebar {
+  position: relative;
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  background-color: var(--eerie-black-2);
+  overflow: hidden;
+  max-height: 112px;
+  transition: var(--transition-2);
+  margin-bottom: 15px;
+}
+
+#sidebar.active {
+  max-height: 402px;
+}
+
+#sidebar-button {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  background: var(--bg-gradient-1);
+  box-shadow: var(--shadow-1);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--orange-yellow-crayola);            
+  border-radius: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+#sidebar-button  span {
+  display: none;
+}
+
+.profile {
+  padding: 15px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-image-container {
+  border-radius: 20px;
+  background: var(--bg-gradient-onyx);
+  width: 80px;
+  height: 80px;
+}
+
+.profile-image-container {
+  -webkit-user-select:none;  
+  -moz-user-select:none;     
+  -ms-user-select:none;      
+  user-select:none;  
+
+} 
+
+.profile-header-info h1 {
+  font-size: var(--fs-17);
+  color: var(--white);
+}
+
+.profile-header-info span {
+  font-size: var(--fs-11);
+  color: var(--light-gray);
+  background-color: var(--jet);
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+
+.profile-info-list {
+  border-top: 1px solid var(--jet);
+  border-bottom: 1px solid var(--jet);
+  margin: 15px 0;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-content span {
+  font-size: var(--fs-11);
+  font-weight: 500;
+  color: var(--light-gray-70);
+}
+
+.item-content a, address, time {
+  font-size: var(--fs-13);
+  color: var(--light-gray);
+  font-family: 400;
+}
+
+.social-contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.social-contacts a {
+  font-size: var(--fs-18);
+  color: var(--orange-yellow-crayola);
+}
+
+.profile-info {
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
+
+#sidebar.active .profile-info {
+  opacity: 1;
+  visibility: visible;
+}

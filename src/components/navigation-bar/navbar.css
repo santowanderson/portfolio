@@ -1,0 +1,37 @@
+#navbar {
+  border: 1px solid var(--jet);
+  backdrop-filter: blur(10px);
+  background-color: hsla(240, 1%, 17%, 0.75);
+  border-radius: 12px 12px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: var(--shadow-2);
+  width: 100%;
+  z-index: 5;
+  padding: 20px 0;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#navbar ul a {
+  padding: 0 7px;
+  font-size: var(--fs-11);
+  color: var(--light-gray);
+  transition: var(--transition-1);
+  font-weight: 400;
+}
+
+#navbar ul a:hover {
+  color: var(--light-gray-70);
+}
+
+#navbar .active {
+  color: var(--orange-yellow-crayola);
+}
